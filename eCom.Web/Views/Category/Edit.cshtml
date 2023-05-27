@@ -1,0 +1,17 @@
+﻿@model eCom.Entities.category
+<h1>Edit Category</h1>
+
+<form method="post">
+
+    <input type="hidden" name="id" value="@Model.id" />
+
+    <label>Name: &nbsp; &nbsp; &nbsp; &nbsp;</label>
+    <input  name="name" value="@Model.name"/>
+
+    <br /><br />
+
+    <label>Description: </label>
+    <input name="description" value="@Model.description"/>
+
+    <button type="submit">Save</button>
+</form>
