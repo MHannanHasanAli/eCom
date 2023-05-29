@@ -53,7 +53,7 @@ namespace eCom.Web.Controllers
         [HttpPost]
         public IActionResult Delete(category category)
         {
-            category = categoriesService.GetCategory(category.id);
+           category = categoriesService.GetCategory(category.id);
 
             categoriesService.DeleteCategory(category);
             return RedirectToAction("Index");
